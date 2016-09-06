@@ -77,7 +77,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBCgSnctlOV7YeWUlat461Kncs57BYaJo0"></script>
 
 <script>
-$(document).ready(  function initialize() {
+  function initialize() {
     var mapProp = {
       center:new google.maps.LatLng(-33.8819435,151.1952626),
       zoom:15,
@@ -86,13 +86,22 @@ $(document).ready(  function initialize() {
     var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
   }
   google.maps.event.addDomListener(window, 'load', initialize);
-
-);
 </script>
 
 
 <script>
     $(document).ready(function () {
+
+        function initialize() {
+          var mapProp = {
+            center:new google.maps.LatLng(-33.8819435,151.1952626),
+            zoom:15,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
         var d = new Date();
         var n = d.getHours();
         if (n > 5 && n < 7)
