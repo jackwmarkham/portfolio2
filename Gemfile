@@ -11,9 +11,6 @@ gem 'pg'
 
 gem 'hover-rails'
 
-gem 'mail_form'
-
-gem 'simple_form'
 #
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -53,7 +50,6 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'foreman'
 end
 
 group :development do
