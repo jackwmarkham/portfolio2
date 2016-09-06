@@ -9,6 +9,8 @@ gem 'rails', '4.2.6'
 # gem 'pg'
 #gem'sqlite3'
 
+gem 'hover-rails'
+
 gem 'mail_form'
 
 gem 'simple_form'
