@@ -28,6 +28,8 @@ class EnquiriesController < ApplicationController
 
     respond_to do |format|
       if @enquiry.save
+        EnquiryMailer.response(@enquiry).deliver_now
+        EnquiryMailer.received(@enquiry).deliver_now
         format.html { redirect_to @enquiry, notice: 'Enquiry was successfully created.' }
         format.json { render :show, status: :created, location: @enquiry }
       else

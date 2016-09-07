@@ -227,8 +227,14 @@ h3 {
     // border: 6px dashed white;
 }
 
+.dg {
+  text-shadow: none !important;
+}
+
 .close-button{
   background-color: transparent;
+  text-color: transparent;
+  text-size: 0;
   color: transparent;
   width: 0px !important;
 }
