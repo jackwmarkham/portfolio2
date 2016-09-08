@@ -63,8 +63,8 @@
                 Hello! My name is Jack Markham, and I’m a Sydney-based full-stack developer, specialising in front-end web development and design. Currently I am a student at CoderFactory Academy and have experience with Ruby, Rails, HTML, CSS and a little bit of
                 javascript.<br><br><br>
                 Prior to entering development, I graduated from the University of Sydney with a degree in in chemistry (BSc. Hons I) and spent time as a research assistant investigating potential metallo-organic drugs for cancer treatment.<br><br><br>
-                I have a passion for science but found academia to be a little slow-paced and administration-heavy. I’m an avid reader, overly-invested cat owner, Seinfeld fanatic, hip hop addict and incredibly amateur musician. If you are a business or
-                individual seeking a web presence, or an employer looking to hire, feel free to drop me a line!<br>
+                I have a passion for science but found academia to be a little slow-paced and administration-heavy. I’m an avid reader, overly-invested cat owner, Seinfeld fanatic, hip hop addict and incredibly amateur musician. If you are a business or individual
+                seeking a web presence, or an employer looking to hire, feel free to drop me a line!<br>
             </p>
         </div>
         <div class="col-sm-1 col-centered"></div>
@@ -75,26 +75,27 @@
 <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBCgSnctlOV7YeWUlat461Kncs57BYaJo0"></script>
 
 <script>
-$(document).ready(function() {
-    var d = new Date();
-    var n = d.getHours();
-    if (n > 5 && n < 7)
-        document.body.className = "dawn";
-    else if (n >= 8 && n <= 10)
-        document.body.className = "morning";
-    else if (n >= 11 && n <= 14)
-        document.body.className = "midday";
-    else if (n >= 15 && n <= 17)
-        document.body.className = "afternoon";
-    else if (n >= 18 && n <= 19)
-        document.body.className = "evening";
-    else if (n == 20)
-        document.body.className = "sunset";
-    else if (n >= 21 && n <= 24)
-        document.body.className = "night";
-    else if (n >= 0 && n <= 5)
-        document.body.className = "midnight";
-    else
-        document.body.className = "midday";
-});
+    $(document).ready(function () {
+        var d = new Date();
+        var n = d.getHours();
+        if (n > 5 && n < 7)
+            document.body.className = "dawn";
+        else if (n >= 8 && n <= 10)
+            document.body.className = "morning";
+        else if (n >= 11 && n <= 14)
+            document.body.className = "midday";
+        else if (n >= 15 && n <= 17)
+            document.body.className = "afternoon";
+        else if (n >= 18 && n <= 19)
+            document.body.className = "evening";
+        else if (n == 20)
+            document.body.className = "sunset";
+        else if (n >= 21 && n <= 24)
+            document.body.className = "night";
+        else if (n >= 0 && n <= 5)
+            document.body.className = "midnight";
+        else
+            document.body.className = "midday";
+        }
+    );
 </script>

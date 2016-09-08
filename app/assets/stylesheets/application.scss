@@ -13,14 +13,6 @@
  *= require_tree .
  *= require_self
  */
-/* @keyframes color-change{
-   0% {
-     background-color:white;
-   }
-   100% {
-     background-color: #eee;
-   }
- } */
 @import 'hover';
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -45,12 +37,6 @@
     font-weight: normal;
     font-style: normal;
 }
-// .img-circle {
-//    border-radius: 50%;
-//    background-image: url(profile.jpg);
-//    background-size: cover;
-//    z-index: 3;
-//  }
 a:hover {
     background-color: transparent;
 }
@@ -179,7 +165,6 @@ h2 {
     padding-right: 10px;
     padding-left: 10px;
 }
-//"vertical-align: center; font-family: 'pxlvetica'; font-size: 20px;"
 body .navbar {
     background-color: transparent;
     border: transparent;
@@ -187,18 +172,9 @@ body .navbar {
 .navbar {
     width: 100vw;
 }
-// body	{
-//     background:url(3Midday.png) top right no-repeat;
-//     background-attachment:fixed;
-//     background-size: cover;
-// }
 .row {
-    // background: rgba(0, 0, 0, 0.5);
     background: white;
-    // -webkit-box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.5);
-    // box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.5);
     margin-bottom: 200px;
-    // border: 6px dashed white;
 }
 .dg {
     text-shadow: none !important;
@@ -284,49 +260,10 @@ body {
     box-shadow: $width 0 $color, -$width 0 $color, 0 (-$width) $color, 0 $width $color;
     margin: $width auto;
 }
-/*@mixin step2( $width, $color, $bgcolor ) {
-  box-shadow:
-    $width 0 $bgcolor,
-    -$width 0 $bgcolor,
-    0 (-$width) $bgcolor,
-    0 $width $bgcolor,
-    2*$width 0 $color,
-    -2*$width 0 $color,
-    0 (-2*$width) $color,
-    0 2*$width $color,
-    $width $width $color,
-    -$width $width $color,
-    $width (-$width) $color,
-    -$width (-$width) $color;
-}*/
 @mixin step2v2( $width, $color, $bgcolor ) {
     box-shadow: $width 0 $bgcolor, -$width 0 $bgcolor, 0 (-$width) $bgcolor, 0 $width $bgcolor, 2*$width 0 $color, -2*$width 0 $color, 0 (-2*$width) $color, 0 2*$width $color, 0 0 0 $width $color;
     margin: 2*$width auto;
 }
-/*@mixin step3( $width, $color, $bgcolor ) {
-  box-shadow:
-    $width 0 $bgcolor,
-    -$width 0 $bgcolor,
-    0 (-$width) $bgcolor,
-    0 $width $bgcolor,
-    2*$width 0 $bgcolor,
-    -2*$width 0 $bgcolor,
-    0 (-2*$width) $bgcolor,
-    0 2*$width $bgcolor,
-    0 0 0 $width $bgcolor,
-    3*$width 0 $color,
-    -3*$width 0 $color,
-    0 3*$width $color,
-    0 (-3*$width) $color,
-    -2*$width (-$width) $color,
-    -$width (-2*$width) $color,
-    $width (-2*$width) $color,
-    2*$width (-$width) $color,
-    2*$width $width $color,
-    $width 2*$width $color,
-    -$width 2*$width $color,
-    -2*$width $width $color;
-}*/
 @mixin step3v2( $width, $color, $bgcolor ) {
     box-shadow: $width 0 $bgcolor, -$width 0 $bgcolor, 0 (-$width) $bgcolor, 0 $width $bgcolor, 2*$width 0 $bgcolor, -2*$width 0 $bgcolor, 0 (-2*$width) $bgcolor, 0 2*$width $bgcolor, 0 0 0 $width $bgcolor, 3*$width 0 $color, -3*$width 0 $color, 0 3*$width $color, 0 (-3*$width) $color, 0 (-$width) 0 $width $color, 0 $width 0 $width $color, $width 0 0 $width $color, -$width 0 0 $width $color;
     margin: 3*$width auto;
@@ -356,23 +293,3 @@ body {
 .other {
     @include step1( 6px, black );
 }
-// .navbar {
-//   margin-bottom: 0px;
-//   background: black;
-//   }
-//
-// .navbar-default .navbar-nav > li > a {
-//   color: white;
-//   }
-//
-// .navbar-default .navbar-nav > li > a:hover {
-//   color: red;
-//   }
-//
-// .navbar-default .navbar-brand {
-//     color: pink;
-//   }
-//
-// .navbar-default .navbar-brand:hover {
-//   color: white
-//   }
