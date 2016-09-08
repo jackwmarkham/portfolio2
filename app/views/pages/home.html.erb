@@ -25,19 +25,20 @@
             </h3>
             <p>
                 This publication was written as the culmination of my research during my B. Sci (Hon 1), completed at the University of Sydney under the supervision of Prof. Peter A. Lay. The focus of the project was the investigation of metal complexes with a
-                common Rh(III)-Pentamethylcyclopmentadiene (*Cp) motif. Unfortunately, I did not single-handedly cure cancer in that year, but I learned that it's just as important to map out the dead ends, even if it's a little less glamorous. The paper was
-                published in the European Journal of Inorganic Chemistry (EJIC) and can be found here.
+                common Rh(III)-Pentamethylcyclopmentadiene (*Cp) motif. <br><br><br> Unfortunately, I did not single-handedly cure cancer in that year, but I learned that it's just as important to map out the dead ends, even if it's a little less glamorous. <br><br><br>The paper was
+                published in the European Journal of Inorganic Chemistry (EJIC) and can be found <a href="http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-0682c">here.</a>
             </p>
         </div>
     </div>
     <div class="row row-centered lvl2" style="padding 10px;">
         <div class="col-sm-6" style="padding: 10px;">
-            <img src="https://pbs.twimg.com/media/BNp5b9xCAAA_cJe.jpg" alt="To Pimp a Seinfeld" style="max-width:100%; max-height:100%;">
+            <%= image_tag "alarm-clock.jpg", :class => "projectimage" %>
         </div>
         <div class="col-sm-6 col-centered">
-            <h3>Project B</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            <h3>alarm-clock.rb</h3>
+            <p>
+              This is a relatively simple alarm clock application that I wrote as a project when I was still learning Ruby. It allows the user to set a different alarm time for each day, to choose from three different alarm tones and to display a todo list when the alarm is activated. <br><br><br> I also integrated weather reports and multiple methods by which to deactivate the alarm, including by doing simple sums or by returning a string of randomly generated text. While not exactly production quality (who really needs a command line alarm?), this project was a great learning experience when I was still coming to grips with the basics of coding. <br><br><br>This app is currently being used as a teaching resource for future classes at CoderFactory Academy and is available on my <a href="https://github.com/jackwmarkham/alarm_clock">GitHub.</a>
+            </p>
         </div>
     </div>
     <div class="row row-centered lvl2" style="padding 10px;">
@@ -51,34 +52,6 @@
         </div>
     </div>
 </div>
-
-<!-- Background change script -->
-<!-- <script>
-    $(document).ready(function () {
-        var d = new Date();
-        var n = d.getHours();
-        if (n > 5 && n < 7)
-            document.body.className = "dawn";
-        else if (n >= 8 && n <= 10)
-            document.body.className = "morning";
-        else if (n >= 11 && n <= 14)
-            document.body.className = "midday";
-        else if (n >= 15 && n <= 17)
-            document.body.className = "afternoon";
-        else if (n >= 18 && n <= 19)
-            document.body.className = "evening";
-        else if (n == 20)
-            document.body.className = "sunset";
-        else if (n >= 21 && n <= 24)
-            document.body.className = "night";
-        else if (n >= 0 && n <= 5)
-            document.body.className = "midnight";
-        else
-            document.body.className = "midday";
-        }
-    );
-</script> -->
-
 <!-- Smooth scroll script -->
 <script>
     $(function () {
@@ -98,8 +71,6 @@
             }
         });
     });
-
-    // Change the speed to whatever you want Personally i think 1000 is too much Try 800 or below, it seems not too much but it will make a difference
 </script>
 
 <!--Particle rain script-->

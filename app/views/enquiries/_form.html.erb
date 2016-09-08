@@ -1,32 +1,33 @@
 <%= form_for(@enquiry) do |f| %>
-  <% if @enquiry.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@enquiry.errors.count, "error") %> prohibited this enquiry from being saved:</h2>
+<% if @enquiry.errors.any? %>
+<div id="error_explanation">
+    <h2><%= pluralize(@enquiry.errors.count, "error") %>
+        prohibited this enquiry from being saved:</h2>
 
-      <ul>
-      <% @enquiry.errors.full_messages.each do |message| %>
+    <ul>
+        <% @enquiry.errors.full_messages.each do |message| %>
         <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <div class="field">
+        <% end %>
+    </ul>
+</div>
+<% end %>
+<div class="field">
     <p><%= f.label :name %><br></p>
     <%= f.text_field :name, {:style => 'width: 100%;', :class => "form-control"} %>
-  </div>
-  <div class="field">
+</div>
+<div class="field">
     <p><%= f.label :email %><br></p>
     <%= f.text_field :email, {:style => 'width: 100%;', :class => "form-control"}  %>
-  </div>
-  <div class="field">
+</div>
+<div class="field">
     <p><%= f.label :subject %><br></p>
     <%= f.text_field :subject, {:style => 'width: 100%;', :class => "form-control"}  %>
-  </div>
-  <div class="field">
+</div>
+<div class="field">
     <p><%= f.label :message %><br></p>
     <%= f.text_area :message, {:style => 'width: 100%;', :class => "form-control"}  %>
-  </div>
-  <div class="actions">
+</div>
+<div class="actions">
     <%= f.submit 'Submit Enquiry', :class => 'btn btn-default'  %>
-  </div>
+</div>
 <% end %>

@@ -3,7 +3,7 @@
 </center>
 
 <center style="margin-bottom: 30px">
-    <h1 style="color: white; animation-name: none; font-size: 6vw;">
+    <h1 style="color: white; animation-name: none; font-size: 5vw;">
         <br>Jack Markham
     </h1>
 </center>
@@ -11,29 +11,35 @@
 <div class="container">
     <div class="row row-centered" style="border: none; background-color: transparent; margin-bottom: 10px;">
         <div class="col-sm-1 col-centered"></div>
-        <div class="col-sm-5 col-centered lvl2" style="background: #000080; margin: 20px; margin-bottom: 150px; padding-top: 20px;">
-            <div id="map" style="width: 100%; height: 200px; margin-top: 100px, margin-bottom: 10px;"></div>
-              <script type="text/javascript">
-                $(function() {
-                  $("#map").googleMap({
-                    zoom: 15, // Initial zoom level (optional)
-                    coords: [-33.8819435,151.1952626], // Map center (optional)
-                    type: "ROADMAP" // Map type (optional)
+        <div class="col-sm-5 col-centered lvl2" style="background: #000080; margin: 20px; margin-bottom: 150px;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h3><%= link_to "Get In Touch!", new_enquiry_path, {:style => 'color: white;  display: inline;'} %></h3>
+            </div>
 
-                  });
+            <div id="map" style="width: 100%; height: 200px; margin-bottom: 10px;"></div>
+            <script type="text/javascript">
+                $(function () {
+                    $("#map").googleMap({
+                        zoom: 15, // Initial zoom level (optional)
+                        coords: [
+                            -33.8819435, 151.1952626
+                        ], // Map center (optional)
+                        type: "ROADMAP" // Map type (optional)
+
+                    });
                 })
-              </script>
+            </script>
             <div style="text-align: center;">
-                <div>
-                  <h3><%= link_to "Contact Me", new_enquiry_path, {:style => 'color: white; vertical-align: middle; display: inline;'} %></h3>
-                </div>
-                <div>
+
+                <div style="margin-top: 30px;">
                     <span class="glyphicon glyphicon-earphone" aria-hidden="true" style="color: white; display: inline;"></span>
                     <p style="color: white; vertical-align: middle; display: inline;">&nbsp; +61 403 517 412<br><br></p>
                 </div>
                 <div>
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true" style="color: white; display: inline;"></span>
-                    <a href="mailto:markham.jack.w@gmail.com"><p style="color: white; vertical-align: middle; display: inline;">&nbsp; markham.jack.w@gmail.com</p></a>
+                    <a href="mailto:markham.jack.w@gmail.com">
+                        <p style="color: white; vertical-align: middle; display: inline;">&nbsp; markham.jack.w@gmail.com</p>
+                    </a>
                 </div>
                 <div style="text-align: center;">
 
@@ -50,14 +56,15 @@
         </div>
         <div class="col-sm-5 col-centered lvl2" style=" background: #000080; margin: 20px;">
             <h3 style='text-align: center;'>
-                About Me
+                A Little Bit About Me
             </h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus augue sit amet quam dapibus commodo. Phasellus justo eros, gravida eget ipsum commodo, interdum convallis massa. Praesent congue massa a risus gravida tempus. Fusce dui nibh,
-                bibendum a lacinia sed, hendrerit at urna. Aenean ac purus condimentum, congue libero in, congue arcu. Phasellus rutrum, nunc et tempus vulputate, arcu sapien condimentum felis, consectetur condimentum risus lacus id felis. Phasellus interdum non
-                tellus sed viverra. Integer dapibus vehicula feugiat. Fusce molestie neque vitae tellus suscipit, et finibus justo scelerisque. Vestibulum vel ex fermentum, volutpat lacus et, rhoncus ex. Nunc viverra lorem nec ex pharetra tempus. Mauris non dapibus
-                lacus. Maecenas lorem mauris, dignissim nec orci et, lacinia hendrerit risus. Integer eget faucibus ipsum. Donec et purus ut mi tempor dapibus. Vestibulum fringilla mi commodo, finibus tortor quis, rutrum sem. Sed porta tincidunt nibh eget finibus. Doop doop doop de dooooo.
-
+                <br>
+                Hello! My name is Jack Markham, and I’m a Sydney-based full-stack developer, specialising in front-end web development and design. Currently I am a student at CoderFactory Academy and have experience with Ruby, Rails, HTML, CSS and a little bit of
+                javascript.<br><br><br>
+                Prior to entering development, I graduated from the University of Sydney with a degree in in chemistry (BSc. Hons I) and spent time as a research assistant investigating potential metallo-organic drugs for cancer treatment.<br><br><br>
+                I have a passion for science but found academia to be a little slow-paced and administration-heavy. I’m an avid reader, overly-invested cat owner, Seinfeld fanatic, hip hop addict and incredibly amateur musician. If you are a business or
+                individual seeking a web presence, or an employer looking to hire, feel free to drop me a line!<br>
             </p>
         </div>
         <div class="col-sm-1 col-centered"></div>
@@ -66,31 +73,3 @@
 
 <script src="jquery.googlemap.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBCgSnctlOV7YeWUlat461Kncs57BYaJo0"></script>
-
-
-
-<!-- <script>
-    $(document).ready(function () {
-        var d = new Date();
-        var n = d.getHours();
-        if (n > 5 && n < 7)
-            document.body.className = "dawn";
-        else if (n >= 8 && n <= 10)
-            document.body.className = "morning";
-        else if (n >= 11 && n <= 14)
-            document.body.className = "midday";
-        else if (n >= 15 && n <= 17)
-            document.body.className = "afternoon";
-        else if (n >= 18 && n <= 19)
-            document.body.className = "evening";
-        else if (n == 20)
-            document.body.className = "sunset";
-        else if (n >= 21 && n <= 24)
-            document.body.className = "night";
-        else if (n >= 0 && n <= 5)
-            document.body.className = "midnight";
-        else
-            document.body.className = "midday";
-        }
-    );
-</script> -->
